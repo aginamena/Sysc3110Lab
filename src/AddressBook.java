@@ -8,13 +8,18 @@ public class AddressBook {
         buddyInfo.add(buddy);
     }
     public void removeBuddy(BuddyInfo buddy){
+        buddyInfo.remove(buddy);
     }
 
     public static void main(String[] a){
         BuddyInfo buddy = new BuddyInfo("Tom", "viking drive", "1234");
+        BuddyInfo buddy2 = new BuddyInfo("Tom", "viking drive", "1234");
+        BuddyInfo buddy3 = new BuddyInfo("Tom", "viking drive", "1234");
         AddressBook addressbook = new AddressBook();
         addressbook.addBuddy(buddy);
-        addressbook.removeBuddy(buddy);
+        addressbook.addBuddy(buddy2);
+        addressbook.addBuddy(buddy3);
+        addressbook.removeBuddy(buddy2);
     }
 
 }
