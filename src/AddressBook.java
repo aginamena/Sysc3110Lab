@@ -10,6 +10,9 @@ public class AddressBook {
     public void removeBuddy(BuddyInfo buddy){
         buddyInfo.remove(buddy);
     }
+    public int getIndex(BuddyInfo buddy){
+        return buddyInfo.indexOf(buddy);
+    }
 
     public static void main(String[] a){
         BuddyInfo buddy = new BuddyInfo("Tom", "viking drive", "1234");
