@@ -5,8 +5,7 @@ public class AddressBook {
         buddyInfo = new ArrayList<>();
     }
     public void addBuddy(BuddyInfo buddy){
-        if(buddy != null)
-            buddyInfo.add(buddy);
+        buddyInfo.add(buddy);
     }
     public void removeBuddy(BuddyInfo buddy){
         buddyInfo.remove(buddy);
